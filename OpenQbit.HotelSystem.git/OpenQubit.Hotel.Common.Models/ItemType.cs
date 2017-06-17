@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace OpenQubit.Hotel.Common.Models
 {
-    public class FoodItem : Item
+    public class ItemType
     {
-       
+        public int ItemTypeId { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
     }
 }

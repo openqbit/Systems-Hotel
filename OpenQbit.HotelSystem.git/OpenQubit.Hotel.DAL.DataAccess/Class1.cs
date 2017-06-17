@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenQubit.Hotel.Common.Models
+namespace OpenQubit.Hotel.DAL.DataAccess
 {
-    public class Waiter : Person
+    public class Class1
     {
     }
 }

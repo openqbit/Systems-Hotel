@@ -6,7 +6,11 @@ using System.Threading.Tasks;
 
 namespace OpenQubit.Hotel.Common.Models
 {
-    public class Cashier: Person
+    public class Customer 
     {
+        public int CustomerId { get; set; }
+
+        public int PersonId { get; set; }
+        public virtual Person Person { get; set; }
     }
 }

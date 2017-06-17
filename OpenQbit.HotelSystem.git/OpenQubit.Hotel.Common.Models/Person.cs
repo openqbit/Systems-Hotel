@@ -8,9 +8,9 @@ namespace OpenQubit.Hotel.Common.Models
 {
     public class Person
     {
-        public int PersonID { get; set; }
+        public int PersonId { get; set; }
         public string Name { get; set; }
-        public string Position { get; set; }
+     //   public string Position { get; set; }
         
     }
 }

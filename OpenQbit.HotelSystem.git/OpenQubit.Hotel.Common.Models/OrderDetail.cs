@@ -10,8 +10,8 @@ namespace OpenQubit.Hotel.Common.Models
     {
         public double TotalQty()
         {
-            return Qty * Price;
-
+            //return Qty * Price;
+            return -1;
         }  
     }
 }
