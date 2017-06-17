@@ -51,6 +51,7 @@
   <ItemGroup>
     <Compile Include="Customer.cs" />
     <Compile Include="Employee.cs" />
+    <Compile Include="Finance\Payment.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemPrice.cs" />
     <Compile Include="ItemType.cs" />
@@ -59,6 +60,10 @@
     <Compile Include="OrderDetail.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="Room\RoomReservation.cs" />
+    <Compile Include="Room\RoomReservationDetail.cs" />
+    <Compile Include="Room\Tour.cs" />
     <Compile Include="test.cs" />
   </ItemGroup>
   <ItemGroup>
