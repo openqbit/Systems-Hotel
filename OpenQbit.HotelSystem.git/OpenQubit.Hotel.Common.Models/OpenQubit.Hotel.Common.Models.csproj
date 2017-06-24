@@ -61,8 +61,10 @@
     <Compile Include="Person.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resource.cs" />
+    <Compile Include="Room\Facility.cs" />
     <Compile Include="Room\RoomReservation.cs" />
     <Compile Include="Room\RoomReservationDetail.cs" />
+    <Compile Include="Room\Service.cs" />
     <Compile Include="Room\Tour.cs" />
     <Compile Include="test.cs" />
   </ItemGroup>
