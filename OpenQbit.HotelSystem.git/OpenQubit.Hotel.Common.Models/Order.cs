@@ -8,5 +8,6 @@ namespace OpenQubit.Hotel.Common.Models
 {
     public class Order : Item
     {
+
     }
 }

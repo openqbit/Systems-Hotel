@@ -13,5 +13,6 @@ namespace OpenQubit.Hotel.Common.Models
             //return Qty * Price;
             return -1;
         }  
+
     }
 }

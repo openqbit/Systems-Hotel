@@ -55,6 +55,7 @@
     <Compile Include="Item.cs" />
     <Compile Include="ItemPrice.cs" />
     <Compile Include="ItemType.cs" />
+    <Compile Include="Kitchen\KitchenOrder.cs" />
     <Compile Include="Management\JobType.cs" />
     <Compile Include="Order.cs" />
     <Compile Include="OrderDetail.cs" />
