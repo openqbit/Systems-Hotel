@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace OpenQubit.Hotel.Common.Models
 {
-    public class Order : Item
+    public class Order
     {
+        public int OrderID { get; set; }
+        public int ItemId { get; set; }
+        public int OrderTypeID { get; set; }
+        public virtual Item Item { get; set; }
+        public virtual OrderType OrderType { get; set; }
     }
 }
