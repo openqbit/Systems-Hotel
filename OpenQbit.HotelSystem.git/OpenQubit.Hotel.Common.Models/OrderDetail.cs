@@ -13,7 +13,7 @@ namespace OpenQubit.Hotel.Common.Models
         {
             //return Qty * Price;
             return -1;
-        }
+        }  
         public int ItemPriceID { get; set; }
 
        // public int ItemId { get; set; }
