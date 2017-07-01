@@ -4,9 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OpenQubit.Hotel.BLL.BusinessService.Contracts.Order
+namespace OpenQubit.Hotel.Common.Utils.Logs
 {
-    interface IBarOrderManager
+    public interface ILogger
     {
+        bool logError(String err);
     }
 }

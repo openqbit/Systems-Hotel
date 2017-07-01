@@ -23,6 +23,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.BLL.Busines
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.BLL.BusinessService.Contracts", "OpenQubit.Hotel.BLL.BusinessService.Contracts\OpenQubit.Hotel.BLL.BusinessService.Contracts.csproj", "{4CF1E717-4228-4322-A13E-A3E81E779D70}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utils", "Utils", "{28EE50BA-7AF8-4B29-9626-700AECD544D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.Common.Utils.Logs", "OpenQubit.Hotel.Common.Utils.Logs\OpenQubit.Hotel.Common.Utils.Logs.csproj", "{DCCB58FD-C569-40B2-9C25-0F6DBB131645}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.DAL.DataAccess.Contracts", "OpenQubit.Hotel.DAL.DataAccess.Contracts\OpenQubit.Hotel.DAL.DataAccess.Contracts.csproj", "{9F08C0DA-C498-4186-B923-0FC3FD6473BB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +51,14 @@ Global
 		{4CF1E717-4228-4322-A13E-A3E81E779D70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4CF1E717-4228-4322-A13E-A3E81E779D70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4CF1E717-4228-4322-A13E-A3E81E779D70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCCB58FD-C569-40B2-9C25-0F6DBB131645}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCCB58FD-C569-40B2-9C25-0F6DBB131645}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCCB58FD-C569-40B2-9C25-0F6DBB131645}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCCB58FD-C569-40B2-9C25-0F6DBB131645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9F08C0DA-C498-4186-B923-0FC3FD6473BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F08C0DA-C498-4186-B923-0FC3FD6473BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F08C0DA-C498-4186-B923-0FC3FD6473BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F08C0DA-C498-4186-B923-0FC3FD6473BB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -54,5 +68,8 @@ Global
 		{D4107BAD-1D30-47BE-8AB1-FA21E99446F4} = {67C41FA8-D3FE-4F86-AFD4-8DCCE345BFA5}
 		{4A41C182-99E5-48F1-AAA8-63A2D01B603A} = {9101C45C-48E4-4022-A2F7-94108FCAA001}
 		{4CF1E717-4228-4322-A13E-A3E81E779D70} = {9101C45C-48E4-4022-A2F7-94108FCAA001}
+		{28EE50BA-7AF8-4B29-9626-700AECD544D3} = {A958697C-B3A7-4423-8B64-423D898C669B}
+		{DCCB58FD-C569-40B2-9C25-0F6DBB131645} = {28EE50BA-7AF8-4B29-9626-700AECD544D3}
+		{9F08C0DA-C498-4186-B923-0FC3FD6473BB} = {67C41FA8-D3FE-4F86-AFD4-8DCCE345BFA5}
 	EndGlobalSection
 EndGlobal
