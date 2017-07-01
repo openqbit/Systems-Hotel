@@ -41,6 +41,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EmployeeManager.cs" />
+    <Compile Include="Orders\BarOrderManager.cs" />
+    <Compile Include="Orders\RestaurantOrderManager.cs" />
+    <Compile Include="Orders\RoomOrderManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -51,6 +54,14 @@
     <ProjectReference Include="..\OpenQubit.Hotel.Common.Models\OpenQubit.Hotel.Common.Models.csproj">
       <Project>{3fe3032d-0297-4d8c-86b3-9e8b739b7f8b}</Project>
       <Name>OpenQubit.Hotel.Common.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQubit.Hotel.Common.Utils.Logs\OpenQubit.Hotel.Common.Utils.Logs.csproj">
+      <Project>{dccb58fd-c569-40b2-9c25-0f6dbb131645}</Project>
+      <Name>OpenQubit.Hotel.Common.Utils.Logs</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQubit.Hotel.DAL.DataAccess.Contracts\OpenQubit.Hotel.DAL.DataAccess.Contracts.csproj">
+      <Project>{9f08c0da-c498-4186-b923-0fc3fd6473bb}</Project>
+      <Name>OpenQubit.Hotel.DAL.DataAccess.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\OpenQubit.Hotel.DAL.DataAccess\OpenQubit.Hotel.DAL.DataAccess.csproj">
       <Project>{d4107bad-1d30-47be-8ab1-fa21e99446f4}</Project>
