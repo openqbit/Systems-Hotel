@@ -1,4 +1,5 @@
 ﻿using OpenQubit.Hotel.Common.Models;
+using OpenQubit.Hotel.Common.Models.Kitchen;
 using OpenQubit.Hotel.Common.Models.Management;
 
 using System;
@@ -25,6 +26,8 @@ namespace OpenQubit.Hotel.DAL.DataAccess
         public DbSet<OrderDetail> OrderDetail { get; set; }
         public DbSet<ItemPrice> ItemPrice { get; set; }
         public DbSet<JobType> JobType { get; set; }
+        public DbSet<KitchenOrder> KichanOrder { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

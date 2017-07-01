@@ -13,7 +13,7 @@ namespace OpenQubit.Hotel.DAL.DataAccess.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201706261601134_DBInit"; }
+            get { return "201707010600300_DBInit"; }
         }
         
         string IMigrationMetadata.Source
