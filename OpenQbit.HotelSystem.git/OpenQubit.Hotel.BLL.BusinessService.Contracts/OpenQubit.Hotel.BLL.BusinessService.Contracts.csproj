@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{4A41C182-99E5-48F1-AAA8-63A2D01B603A}</ProjectGuid>
+    <ProjectGuid>{4CF1E717-4228-4322-A13E-A3E81E779D70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>OpenQubit.Hotel.BLL.BusinessService</RootNamespace>
-    <AssemblyName>OpenQubit.Hotel.BLL.BusinessService</AssemblyName>
+    <RootNamespace>OpenQubit.Hotel.BLL.BusinessService.Contracts</RootNamespace>
+    <AssemblyName>OpenQubit.Hotel.BLL.BusinessService.Contracts</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -40,7 +40,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="IEmployeeManager.cs" />
+    <Compile Include="Order\IBarOrderManager.cs" />
+    <Compile Include="Order\IRestaurantOrderManager.cs" />
+    <Compile Include="Order\IRoomOrderManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -53,6 +56,7 @@
       <Name>OpenQubit.Hotel.DAL.DataAccess</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

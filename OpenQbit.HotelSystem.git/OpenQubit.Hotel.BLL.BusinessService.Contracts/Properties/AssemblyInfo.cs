@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("OpenQubit.Hotel.BLL.BusinessService")]
+[assembly: AssemblyTitle("OpenQubit.Hotel.BLL.BusinessService.Contracts")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("OpenQubit.Hotel.BLL.BusinessService")]
+[assembly: AssemblyProduct("OpenQubit.Hotel.BLL.BusinessService.Contracts")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("4a41c182-99e5-48f1-aaa8-63a2d01b603a")]
+[assembly: Guid("4cf1e717-4228-4322-a13e-a3e81e779d70")]
 
 // Version information for an assembly consists of the following four values:
 //
