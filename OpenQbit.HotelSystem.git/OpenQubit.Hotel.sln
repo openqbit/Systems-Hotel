@@ -19,7 +19,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.Common.Mode
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.DAL.DataAccess", "OpenQubit.Hotel.DAL.DataAccess\OpenQubit.Hotel.DAL.DataAccess.csproj", "{D4107BAD-1D30-47BE-8AB1-FA21E99446F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.BLL.BusinessService", "OpenQubit.Hotel.BLL.BusinessService\OpenQubit.Hotel.BLL.BusinessService.csproj", "{4A41C182-99E5-48F1-AAA8-63A2D01B603A}"
+
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.BLL.BusinessService.Contracts", "OpenQubit.Hotel.BLL.BusinessService.Contracts\OpenQubit.Hotel.BLL.BusinessService.Contracts.csproj", "{4CF1E717-4228-4322-A13E-A3E81E779D70}"
 EndProject
