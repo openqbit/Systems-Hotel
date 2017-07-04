@@ -45,11 +45,15 @@ namespace OpenQubit.Hotel.DAL.DataAccess
             return _db.Set<T>().Where(predicate).FirstOrDefault();
         }
 
-        public T FindById<T>(string id) where T : class
+        
+
+      
+        public T FindById<T>(int id) where T : class
         {
             return _db.Set<T>().Find(id);
         }
 
+        
         public List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class
         {
             return _db.Set<T>().Where<T>(predicate).ToList();
@@ -82,7 +86,7 @@ namespace OpenQubit.Hotel.DAL.DataAccess
                 edbstate.State = EntityState.Modified;
                 return true;
             }
-            catch (Exception e)
+            catch (Exception edb)
             {
                 return false;
             }

@@ -13,11 +13,15 @@ namespace OpenQubit.Hotel.DAL.DataAccess.Contracts
 
         T Find<T>(Expression<Func<T, bool>> predicate) where T : class;
 
-        T FindById<T>(String id) where T : class;
-        List<T> FindList<T>(Expression<Func<T, bool>> predicate) where T : class;
+        T FindById<T>(int id) where T : class;
+        List<T> FindList<T>(Expression<Func<T,bool>> predicate) where T : class;
         bool Create<T>(T obj) where T : class;
         bool Update<T>(T obj) where T : class;
         bool Delete<T>(T obj) where T : class;
         bool Save();
+
+    
+
+
     }
 }

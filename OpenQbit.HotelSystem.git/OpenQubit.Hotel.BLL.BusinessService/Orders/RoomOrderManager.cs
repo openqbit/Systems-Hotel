@@ -14,19 +14,37 @@ namespace OpenQubit.Hotel.BLL.BusinessService.Orders
     {
         private ILogger log;
         private IRepository repository;
-        public bool ModifyRoomOrder(Order order)
+
+        public List<Order> FindByDate(DateTime datetime)
         {
-            throw new NotImplementedException();
+            return repository.FindList<Order>(O => O.OrderDate == datetime);
+           // throw new NotImplementedException();
+        }
+
+        public Order FindById(int id)
+        {
+            return repository.Find<Order>(O=>O.OrderID==id);
+            //return repository.Find1<Order>(O =>O.d)
+           // throw new NotImplementedException();
+        }
+
+        public bool ModifyRoomOrder(Order order)
+
+        {
+            return repository.Update<Order>(order);
+            //throw new NotImplementedException();
         }
 
         public bool RecordRoomOrder(Order order)
         {
-            throw new NotImplementedException();
+            return repository.Create<Order>(order);
+            //throw new NotImplementedException();
         }
 
         public bool RemoveRoomOrder(Order order)
         {
-            throw new NotImplementedException();
+            return repository.Delete<Order>(order);
+            //throw new NotImplementedException();
         }
     }
 }

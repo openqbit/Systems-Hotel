@@ -14,6 +14,16 @@ namespace OpenQubit.Hotel.BLL.BusinessService.Contracts.Orders
 
         bool RemoveBarOrder(Order order);
 
-        
+        Order FindById(int id); 
+
+        List<Order> FindByOrderType(int ordertypeid);
+
+      
+
+        List<Order> FindByDate(DateTime datetime);
+
+     
+
+
     }
 }

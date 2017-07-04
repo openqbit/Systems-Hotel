@@ -51,10 +51,6 @@
       <Project>{3fe3032d-0297-4d8c-86b3-9e8b739b7f8b}</Project>
       <Name>OpenQubit.Hotel.Common.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\OpenQubit.Hotel.DAL.DataAccess\OpenQubit.Hotel.DAL.DataAccess.csproj">
-      <Project>{d4107bad-1d30-47be-8ab1-fa21e99446f4}</Project>
-      <Name>OpenQubit.Hotel.DAL.DataAccess</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

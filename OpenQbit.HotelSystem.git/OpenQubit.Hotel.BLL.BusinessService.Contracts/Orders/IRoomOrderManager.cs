@@ -1,4 +1,10 @@
-﻿using OpenQubit.Hotel.Common.Models;
+﻿/*
+ * Description : Handle orders send to the room (Eg: orde food from the room)
+ * 
+ */
+
+
+using OpenQubit.Hotel.Common.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,5 +20,9 @@ namespace OpenQubit.Hotel.BLL.BusinessService.Contracts.Orders
         bool ModifyRoomOrder(Order order);
 
         bool RemoveRoomOrder(Order order);
+
+        Order FindById(int id);
+
+        List<Order> FindByDate(DateTime datetime);
     }
 }
