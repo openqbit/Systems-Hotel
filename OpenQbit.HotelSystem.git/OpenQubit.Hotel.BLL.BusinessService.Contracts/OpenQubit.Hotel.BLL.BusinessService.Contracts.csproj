@@ -41,6 +41,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IEmployeeManager.cs" />
+    <Compile Include="IItemManager.cs" />
     <Compile Include="Orders\IBarOrderManager.cs" />
     <Compile Include="Orders\IRestaurantOrderManager.cs" />
     <Compile Include="Orders\IRoomOrderManager.cs" />
