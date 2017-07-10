@@ -9,17 +9,22 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using Openqubit.Hotel.Service.WebAPI.Mappers;
+
+
 
 namespace Openqubit.Hotel.Service.WebAPI.Controllers.API
 {
     public class RestaurantOrderApiController : ApiController
     {
+
+        IRestaurantOrderManager restaurantOrder = UnityResolver.Resolve<IRestaurantOrderManager>();
+        RestaurantOrder order;
         public bool Add(RestaurantOrderApiModel restaurantOrdermodel)
         {
-            IRestaurantOrderManager restaurantOrder = UnityResolver.Resolve<IRestaurantOrderManager>();
+            
 
-
-            RestaurantOrder order = new RestaurantOrder
+             order = new RestaurantOrder
             {
                 EmployeeID = restaurantOrdermodel.EmployeeID,
                 CustomerID = restaurantOrdermodel.CustomerID,
@@ -36,32 +41,34 @@ namespace Openqubit.Hotel.Service.WebAPI.Controllers.API
             return restaurantOrder.RecordRestaurantOrder(order);
         }
 
-        public List<ApiCustomerModel> GetList()
+        public List<RestaurantOrderApiModel> GetList()
         {
-            List<ApiCustomerModel> customerList = new List<ApiCustomerModel>();
 
-            ApiCustomerModel customer1 = new ApiCustomerModel
-            {
-                ID = 1,
-                Name = "Abc",
-                Address = "Colombo",
-                Tel = "094",
-                Creditlimit = 2000
-            };
-
-            ApiCustomerModel customer2 = new ApiCustomerModel
-            {
-                ID = 2,
-                Name = "Bcd",
-                Address = "Panadura",
-                Tel = "094",
-                Creditlimit = 2500
-            };
-
-            customerList.Add(customer1);
-            customerList.Add(customer2);
-
-            return customerList;
+           return Mappers.ResturantAPIModelMapper.MapOrderModel (restaurantOrder.FindByDate(order.OrderDate));
+           // return restaurantOrder.FindByDate(
         }
+
+        public List<RestaurantOrderApiModel> GetOrderTypeList()
+        {
+            return Mappers.ResturantAPIModelMapper.MapOrderModel(restaurantOrder.FindByOrderType(order.OrderTypeID));
+        }
+
+        public bool ModifyRestaurantOrder(RestaurantOrderApiModel restaurantOrdermodel)
+        {
+            return restaurantOrder.ModifyRestaurantOrder(order);
+            // throw new NotImplementedException();
+        }
+
+        public bool RemoveRestaurantOrder(RestaurantOrderApiModel restaurantOrdermodel)
+        {
+            return restaurantOrder.RemoveRestaurantOrder(order);
+            // throw new NotImplementedException();
+        }
+
+        public Order FindById(RestaurantOrderApiModel restaurantOrdermodel)
+        {
+            return restaurantOrder.FindById(order.OrderID);
+        }
+
     }
 }

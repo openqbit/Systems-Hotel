@@ -214,6 +214,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mappers\ResturantAPIModelMapper.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\API\BarOrderApiModel.cs" />
@@ -295,6 +296,10 @@
     <ProjectReference Include="..\OpenQubit.Hotel.BLL.BusinessService.Contracts\OpenQubit.Hotel.BLL.BusinessService.Contracts.csproj">
       <Project>{4cf1e717-4228-4322-a13e-a3e81e779d70}</Project>
       <Name>OpenQubit.Hotel.BLL.BusinessService.Contracts</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenQubit.Hotel.BLL.BusinessService\OpenQubit.Hotel.BLL.BusinessService.csproj">
+      <Project>{4a41c182-99e5-48f1-aaa8-63a2d01b603a}</Project>
+      <Name>OpenQubit.Hotel.BLL.BusinessService</Name>
     </ProjectReference>
     <ProjectReference Include="..\OpenQubit.Hotel.Common.Ioc\OpenQubit.Hotel.Common.Ioc.csproj">
       <Project>{121225fc-0d8e-4c57-9d46-9f59efc1e62e}</Project>
