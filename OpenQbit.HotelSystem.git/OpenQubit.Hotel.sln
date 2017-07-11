@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Openqubit.Hotel.Service.Web
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.Common.Ioc", "OpenQubit.Hotel.Common.Ioc\OpenQubit.Hotel.Common.Ioc.csproj", "{121225FC-0D8E-4C57-9D46-9F59EFC1E62E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OpenQubit.Hotel.Test.DALTest", "OpenQubit.Hotel.Test.DALTest\OpenQubit.Hotel.Test.DALTest.csproj", "{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +79,10 @@ Global
 		{121225FC-0D8E-4C57-9D46-9F59EFC1E62E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{121225FC-0D8E-4C57-9D46-9F59EFC1E62E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{121225FC-0D8E-4C57-9D46-9F59EFC1E62E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -92,5 +98,6 @@ Global
 		{EB532F49-66BB-4248-9851-5E0B339799E6} = {0498CDA6-3F76-4835-A1DD-EC453F2A0B73}
 		{A4C5008D-380A-44DB-A3D7-6B8F2685D7EB} = {4BDA09DD-6C61-4F48-902E-AF6F2C636F15}
 		{121225FC-0D8E-4C57-9D46-9F59EFC1E62E} = {A958697C-B3A7-4423-8B64-423D898C669B}
+		{3DDD20AB-C3CB-4092-A7EF-2ACFE0FFF8C7} = {3037D837-950F-4222-834B-0F11EC2A9E45}
 	EndGlobalSection
 EndGlobal
